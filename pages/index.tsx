@@ -3,8 +3,12 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Header from '@/components/Header/Header'
 import CardB from '@/components/card/card'
-// import Dropdown from '@/components/Dropdown'
-const inter = Inter({ subsets: ['latin'] })
+import ImageSwipper from '@/components/ImageSlideSection'
+import FactSection from '@/components/FactSection'
+import CardY from '@/components/card/CardY'
+import BottomSection from '@/components/BottomSection/BottomSection'
+import Footer from '@/components/Footer'
+// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -17,7 +21,7 @@ export default function Home() {
       </Head>
       <Header />
 
-      <main>
+      <main className='bg-slate-200'>
       <div className="relative">
         <div className="bg-hero-section bg-no-repeat h-screen bg-center bg-cover">
           <video autoPlay loop muted className="absolute inset-0 object-cover h-screen xl:h-auto">
@@ -39,7 +43,38 @@ export default function Home() {
         </div>
       </div>
 
+<div className='w-full max-w-5xl px-2 py-6 relative mx-auto'>
+  <div className='hidden md:flex justify-end items-end'>
+    <Image
+    src='https://www.forafrika.org/wp-content/uploads/2022/08/Afrika-Thrive.jpg'
+    height={200}
+    width={600}
+    alt='old woman smiling'
+    />
+  </div>
+  <div className='hidden md:flex justify-center items-center'>
+    <Image
+    src='https://www.forafrika.org/wp-content/uploads/2022/12/ForAfrika-Feeding.jpg'
+    height={180}
+    width={500}
+    alt='a child eating'
+    />
+  </div>
+<div className='md:absolute left-0 top-40'>
+
       <CardB />
+</div>
+
+
+</div>
+
+<ImageSwipper />
+<FactSection />
+<CardY />
+<BottomSection />
+
+<Footer />
+
       
       </main>
     </>
