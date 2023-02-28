@@ -16,11 +16,12 @@ const BottomSection = () => {
 
             <div className="flex flex-col md:flex-row h-fit w-screen px-1 justify-center items-center">
               {/* create a background Image  with a button on the top right and a text in the center  */}
-                <div className="relative w-full px-2 md:w-1/2 h-96 pl-1">
+                <div className="relative w-full mx-auto  mb-32 md:mb-10 ml-12 md:w-1/2 h-96">
                     <Image
                     src='https://www.forafrika.org/wp-content/uploads/2023/02/loveforafrika-800x800_c.jpg'
 
-                    layout="fill"
+                    width={450}
+                    height={400}
                     alt="2 child huging"
                     className="rounded-xl"
                     />
@@ -38,54 +39,80 @@ const BottomSection = () => {
 
                             <div className=" w-full md:w-1/2 px-2 h-fit">
                                 <div className="grid grid-cols-2 gap-4">
+                                    <div className='block'>
                                     <div className="relative">
                                         <Image
-                                        src='https://www.forafrika.org/wp-content/uploads/2022/12/ForAfrika-Feeding.jpg'
+                                        src='https://www.forafrika.org/wp-content/uploads/2023/01/Lillian-Achirochan-attending-to-expectant-mothers-480x280_c.jpg'
                                         height={150}
                                         width={400}
+                                        className="rounded-xl"
                                         alt="A child eating"
                                         />
-                                        <div className="absolute top-0 right-0">
-                                            <button className="btn uppercase">From the Fields</button>
+                                         <div className="absolute top-3 left-3">
+                                            <button className="btn uppercase">Emergency Response</button>
                                             </div>
 
                                             </div>
+                                            <p className="text-left text-[#cf2e2e] py-3 font-serif font-normal text-sm">
+                                                ForAfrika saves the lives of gunshot patients – and delivers new babies</p>
+
+                                            </div>
+                                            <div className='block'>
                                             <div className="relative">
                                         <Image
-                                        src='https://www.forafrika.org/wp-content/uploads/2022/12/ForAfrika-Feeding.jpg'
+                                        src='https://www.forafrika.org/wp-content/uploads/2023/01/SA-Early-Childhood-Development-480x280_c.jpg'
                                         height={150}
                                         width={400}
+                                        className="rounded-xl"
                                         alt="A child eating"
                                         />
-                                        <div className="absolute top-0 right-0">
-                                            <button className="bg-white text-black px-4 py-2 rounded-full">Learn More</button>
-                                            </div>
+                                       <div className="absolute top-3 left-3">
+                                       <button className="btn uppercase">From the Fields</button>
+                                            </div></div>
+                                            <p className="text-left text-[#cf2e2e] py-3 font-serif font-normal text-sm">
+                                    Photo Essay: Volunteers transform a pre-school – and the lives of children
+                                    </p>
+                                    </div>
+                                    <div className= "block">
 
-                                            </div>
                                             <div className="relative">
                                         <Image
-                                        src='https://www.forafrika.org/wp-content/uploads/2022/12/ForAfrika-Feeding.jpg'
+                                        src='https://www.forafrika.org/wp-content/uploads/2022/11/LOI_S_Drought_Sep_043-ST-L-scaled-480x280_c.jpg'
                                         height={150}
                                         width={400}
-                                        alt="A child eating"
+                                        className="rounded-xl"
+                                        alt="A man standing"
                                         />
-                                        <div className="absolute top-0 right-0">
-                                            <button className="bg-white text-black px-4 py-2 rounded-full">Learn More</button>
+                                        <div className="absolute top-3 left-3">
+                                            <button className="bg-white btn uppercase hover:bg-slate-200 opacity-80 duration-500 ease-out rounded-full">In the Media</button>
                                             </div>
 
                                             </div>
-                                            <div className="relative">
-                                        <Image
-                                        src='https://www.forafrika.org/wp-content/uploads/2022/12/ForAfrika-Feeding.jpg'
-                                        height={150}
-                                        width={400}
-                                        alt="A child eating"
-                                        />
-                                        <div className="absolute top-0 right-0">
-                                            <button className="bg-white text-black px-4 py-2 rounded-full">Learn More</button>
-                                            </div>
+                                            <p className="text-left text-[#cf2e2e] py-3 font-serif font-normal text-sm">
+                                                ForAfrika’s work in Kenya featured in the Guardian
+                                                </p>
+                                                </div>
 
-                                            </div>
+                                                <div className= "block">
+
+<div className="relative">
+<Image
+src='https://www.forafrika.org/wp-content/uploads/2022/08/Isabel-480x280_c.jpg'
+height={150}
+width={400}
+className="rounded-xl"
+alt="A man standing"
+/>
+<div className="absolute top-3 left-3">
+<button className="bg-white btn uppercase hover:bg-slate-200 opacity-80 duration-500 ease-out rounded-full">In the Fields</button>
+</div>
+
+</div>
+<p className="text-left text-[#cf2e2e] py-3 font-serif font-normal text-sm">
+    Isabel new begining
+    </p>
+    </div>
+                                          
                                             </div>
                                             </div>
                                             </div>
