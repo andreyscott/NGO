@@ -21,51 +21,6 @@ const Nav = () => {
   }
   // controlling navbar hover elements to show popup
   const [hovered, setHovered] = useState<string | null>(null)
-  // for mobile navigation
-  const onhoverdata = [
-    {
-     id : 1,
-      name : "Services",
-      href : "/service",
-      subnav : [
-        {
-          id : 1,
-          name : "Web Development",
-          href : "/service/web-development",
-        },
-        {
-          id : 2,
-          name : "Mobile Development",
-          href : "/service/mobile-development",
-        },
-        {
-          id : 3,
-          name : "UI/UX Design",
-          href : "/service/ui-ux-design",
-        },
-      ]
-
-    },
-    {
-      id : 2,
-      name : "About",
-      href : "/about",
-      subnav : [
-        {
-          id : 1,
-          name : "Web Development",
-          href : "/service/web-development",
-        },
-        {
-          id : 2,
-          name : "Mobile Development",
-          href : "/service/mobile-development",
-        },
-      ]
-    }
-    
-
-  ]
 
   const [isActive, setIsActive] = useState(false);
 
@@ -89,22 +44,19 @@ const Nav = () => {
             >
               <Link href={item.link} 
               // className='hover:text-primary-200 transition'
-              className={`
-              ${isActive ? 'text-black' : 'text-white'}
-              hover:text-primary-200 transition
-              `}
+              className={`text-black hover:text-[#a50000] transition duration-500 ease-out`}
               >
                 {item.title}
               </Link>
 
               {hovered == item.title && item.additionalLinks && (
-                        <div className="absolute flex flex-col items-center justify-center ml-4 bg-white rounded-md ">
+                        <div className="absolute flex flex-col -ml-8 mt-5 items-center justify-center bg-white rounded-md ">
                           <div className="flex flex-col items-center justify-center text-black truncate ">
                             {item.additionalLinks.map((adLink) => {
                               return (
                                 <button
                                   onClick={() => router.push(adLink.link)}
-                                  className="w-full pt-2 pb-2 pl-4 pr-4 text-sm uppercase opacity-100 semibold md:text-md hover:bg-black hover:text-white "
+                                  className="w-full pt-2 pb-2 pl-4 pr-4 text-sm opacity-100 semibold md:text-md hover:bg-black hover:text-white "
                                   key={adLink.title}
                                 >
                                   <div className="mr-8">{adLink.title}</div>

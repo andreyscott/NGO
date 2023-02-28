@@ -32,37 +32,45 @@ export default function Home() {
           </video>
           <div className="absolute inset-0 w-full max-w-3xl ">
             {/* <Navbar /> */}
-            <h1 className="sm:text-4xl leading-loose tracking-wider  text-3xl font-bold my-32 mx-16 text-left text-white">
+            <div className="sm:text-5xl leading-9 h-96 w-[40rem] xl:w-[44rem] tracking-wider  text-4xl font-bold my-52 mx-16 text-left text-white">
+          <h1>
+
             Empower 20 million Africans
-            <br />
+          </h1>
+           
+           <h1 className='py-4'>
             to sustainably provide
-            <br />
-            for themselves my 2023
             </h1>
+   
+   <h1>
+            for themselves my 2023
+   </h1>
+            </div>
           </div>
         </div>
       </div>
 
-<div className='w-full max-w-5xl px-2 py-6 relative mx-auto'>
+<div className='w-full max-w-5xl lg:max-w-6xl px-2 lg:px-6 py-16 lg:py-36 relative mx-auto'>
   <div className='hidden md:flex justify-end items-end'>
     <Image
     src='https://www.forafrika.org/wp-content/uploads/2022/08/Afrika-Thrive.jpg'
     height={200}
     width={600}
+    className='rounded-lg'
     alt='old woman smiling'
     />
   </div>
-  <div className='hidden md:flex justify-center items-center'>
+  <div className='hidden md:flex justify-center pt-4 items-center'>
     <Image
     src='https://www.forafrika.org/wp-content/uploads/2022/12/ForAfrika-Feeding.jpg'
-    height={180}
-    width={500}
+    height={170}
+    width={700}
+    className='rounded-lg'
     alt='a child eating'
     />
   </div>
-<div className='md:absolute left-0 top-40'>
-
-      <CardB />
+<div className='md:absolute top-40'>
+   <CardB />
 </div>
 
 

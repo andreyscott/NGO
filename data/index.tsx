@@ -10,9 +10,57 @@ export const header = {
 
   export const nav = [
     {
-      title: 'About',
+      title: 'Our work',
+      link: '/our-work',
+      additionalLinks: [
+        {
+          title: 'Emergency Response',
+          link: '/our-work/emergency-response',
+        }, 
+        {
+          title: 'Food Scarcity and livelihoods',
+          link: '/our-work/food-scarcity-and-livelihoods',
+        },
+        {
+          title: 'Water, Sanitation and Hygiene',
+          link: '/our-work/water-sanitation-and-hygiene',
+        },
+        {
+          title: 'Education',
+          link: '/our-work/education',
+        },
+      
+        {
+          title: 'Our Impact',
+          link: '/our-work/our-impact',
+        },
+        {
+          title: 'Our Approach',
+          link: '/our-work/our-approach',
+        },
+      ]
+    },
+   {
+      title: 'Where we work',
+      link: '/where-we-work',
+    },
+    {
+      title: 'Stories',
+      link:"/stories",
+    },
+
+    {
+      title: 'About us',
       link: '/about',
       additionalLinks: [
+        {
+          title: 'Our Story',
+          link: '/our-story',
+        },
+        {
+          title: 'Our brand',
+          link: '/our-brand',
+        },
         {
           title: 'Our Team',
           link: '/teams',
@@ -21,43 +69,9 @@ export const header = {
           title: 'Contact',
           link: '/contact', 
         },
-        {
-          title: 'Trigan Citizenship',
-          link: '/about/trigan-citizenship', 
-        },
-        {
-        title: 'Social Empowerment',
-        link: '/about/social-empowerment-and-community-impact', 
-      },
+        
       ]
     },  
-   {
-      title: 'Blog',
-      link: '/blog',
-    },
-    {
-      title: 'Project',
-      link:"/project",
-      additionalLinks: [
-        {
-            title: "Project Overview",
-            link:"/project",
-          },
-         {
-          title: 'Governments and Local Authorities',
-          link: '/project/government-and-local-authority-partnerships',
-        },
-        {
-          title: 'Charities and Third Sector Organisations',
-          link: '/project/charities-and-third-sector-opportunities',
-        },
-        {
-          title: 'Social Enterprises',
-          link: '/project/social-enterprises',
-        },
-    
-      ]
-    },
 
 ];
 

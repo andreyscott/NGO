@@ -26,12 +26,30 @@ const data = [
 
 const ImageSlider = () => {
   return (
-    <div className="flex flex-wrap">
+    <div className="flex w-full mx-auto lg:mx-auto lg:max-w-7xl flex-wrap">
         <Swiper
       // install Swiper modules
       modules={[Navigation]}
-      spaceBetween={50}
-      slidesPerView={4}
+      // spaceBetween={30}
+      // slidesPerView={4}
+      // slidesPerView='auto'
+      breakpoints={{
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 5,
+        },
+        1280: {
+          slidesPerView: 5,
+        },
+      }}
       navigation
       loop={true}
       onSwiper={(swiper) => console.log(swiper)}
@@ -41,18 +59,21 @@ const ImageSlider = () => {
 
       {data.map((item, index) => (
         
-        <div key={item.id} >
+        <div 
+        className='w-80 h-96'
+        key={item.id} >
         
             <SwiperSlide>
-       <div className={`w-full px-2 ${index % 2 !== 0 ? 'pt-4 md:pt-0' : 'pt-4'}`}>
+       <div className={`w-64 h-96 ${index % 2 !== 0 ? 'pt-4 md:pt-0' : 'pt-4'}`}>
 
           <Image
           src={item.image} alt={item.text}
           width={80}
             height={200}
            className="w-full h-auto rounded-xl object-cover" />
-          <p className="mt-2 text-black italic">{item.text}</p>
           </div>
+          <p className="mt-4 pt-3 w-full text-black italic">{item.text}</p>
+
             </SwiperSlide>
         </div>
       ))}

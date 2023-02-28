@@ -9,19 +9,28 @@ import Image from 'next/image';
 const CardY = () => {
     return (
         <div className="h-full w-full">
-        <div className="relative overflow-hidden rounded-lg mx-auto shadow-lg w-[31rem] sm:w-[40rem] md:w-[30rem]  h-96 md:h-[26rem] xl:h-[27rem] cursor-pointer">
+        <div className="relative overflow-hidden rounded-lg mx-auto shadow-lg w-[31rem] sm:w-[35rem] md:w-[37rem] h-96 md:h-[25rem] xl:h-[26rem] cursor-pointer">
           <Image className="object-cover w-full h-full" 
           src={Afr}
-            width={200}
-            height={100}
+            width={300}
+            height={150}
           alt="Flower and sky"
           />
       
           <div className="absolute top-0 text-left font-serif left-0 px-6 py-8">
-            <h4 className="mb-3 md:mb-7 text-2xl md:text-3xl font-normal tracking-tight text-white"
+            <h4 
+            data-aos="fade-up-right"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-offset="0"
+            className="mb-3 md:mb-7 text-2xl md:text-3xl font-normal tracking-tight text-white"
             // font-family: "Untitled Regular", Helvetica, Arial, sans-serif;
             >The challenges of our continent are diverse and complex but together we can overcome them</h4>
             <p 
+             data-aos="fade-up-right"
+             data-aos-duration="1000"
+             data-aos-delay="100"
+             data-aos-offset="0"
             // font-family: "Söhne Leicht", Helvetica, Arial, sans-serif;
             className="leading-normal text-lg md:text-xl text-gray-100">
                 Your support means access to education, food, water, health, income, and dignity for those who need it most. Our locally led interventions and your generosity will save lives, build resilience, and bring hope as we work together for an Africa that thrives.
