@@ -36,15 +36,19 @@ const Header = ( ) => {
     <header
       className={`${
         isActive ? ' py-[16px]' : 'bg-white bg-cover bg-no-repeat py-[20px]'
-      } fixed bg-banner left-0 right-0 mx-auto flex justify-between items-center px-[20px] lg:px-[60px] z-30 transition-all duration-300`}
+      }
+       sticky bg-banner left-0 right-0 mx-auto flex justify-between items-center px-[20px] lg:px-[60px] z-30 transition-all duration-300`}
     >
+   
+    {/* className='bg-white bg-cover bg-no-repeat py-4 md:py-5 mx-auto flex justify-between items-center px-[20px] lg:px-[60px] z-30 transition-all duration-300 */}
       {/* logo */}
       <Link href='/'>
           <Image 
         className='h-[50px]' 
-        src={Africa}
-        width={300}
-        height={200}
+        // {navMobile ?
+        src={navMobile ? 'https://www.forafrika.org/wp-content/uploads/2022/03/ForAfrika-Logo.png' : Africa }
+        width={navMobile ? 100 : 300}
+        height={navMobile ? 80 : 200}
         
         alt='TEST' />
 

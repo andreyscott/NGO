@@ -228,7 +228,7 @@ const Footer = () => {
 
             <li>
                 <Link
-                  className="group flex justify-center gap-1.5 sm:justify-start"
+                  className="group flex justify-start gap-1.5 sm:justify-start"
                   href="/"
                 >
                   <span

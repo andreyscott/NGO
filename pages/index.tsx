@@ -21,18 +21,18 @@ export default function Home() {
       </Head>
       <Header />
 
-      <main className='bg-slate-200'>
-      <div className="relative">
-        <div className="bg-hero-section bg-no-repeat h-screen bg-center bg-cover">
-          <video autoPlay loop muted className="absolute inset-0 object-cover h-screen xl:h-auto">
+      <main className='bg-slate-200 w-screen'>
+      <div className="relative w-screen">
+        <div className="bg-hero-section bg-no-repeat h-screen w-screen bg-center bg-cover">
+          <video autoPlay loop muted className="absolute inset-0 object-cover w-screen h-screen xl:h-auto">
             <source
               src="Home/robovice-banner.mp4"
               type="video/mp4"
             />
           </video>
-          <div className="absolute inset-0 w-full max-w-3xl ">
+          <div className="absolute inset-0 w-full max-w-3xl md:max-w-4xl">
             {/* <Navbar /> */}
-            <div className="sm:text-5xl leading-9 h-96 w-[40rem] xl:w-[44rem] tracking-wider  text-4xl font-bold my-52 mx-16 text-left text-white">
+            <div className="sm:text-5xl leading-9 h-96 w-full sm:w-[40rem] xl:w-[44rem] tracking-wider  text-4xl font-bold my-52 mx-3 sm:mx-7 md:mx-16 text-left text-white">
           <h1>
 
             Empower 20 million Africans
@@ -54,18 +54,19 @@ export default function Home() {
   <div className='hidden md:flex justify-end items-end'>
     <Image
     src='https://www.forafrika.org/wp-content/uploads/2022/08/Afrika-Thrive.jpg'
-    height={200}
-    width={600}
-    className='rounded-lg'
+    height={400}
+    width={750}
+    className='rounded-xl'
     alt='old woman smiling'
     />
   </div>
-  <div className='hidden md:flex justify-center pt-4 items-center'>
+  <div className='hidden md:flex justify-center max-h-96 w-full pt-4 items-center'>
     <Image
     src='https://www.forafrika.org/wp-content/uploads/2022/12/ForAfrika-Feeding.jpg'
-    height={170}
+    height={300}
     width={700}
-    className='rounded-lg'
+    layout='fixed'
+    className='rounded-xl'
     alt='a child eating'
     />
   </div>

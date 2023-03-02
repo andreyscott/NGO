@@ -32,24 +32,24 @@ const ImageSlider = () => {
       modules={[Navigation]}
       // spaceBetween={30}
       // slidesPerView={4}
-      // slidesPerView='auto'
-      breakpoints={{
-        320: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 5,
-        },
-        1280: {
-          slidesPerView: 5,
-        },
-      }}
+      slidesPerView='auto'
+      // breakpoints={{
+      //   320: {
+      //     slidesPerView: 2,
+      //     spaceBetween: 10,
+      //   },
+      //   768: {
+      //     slidesPerView: 3,
+      //     spaceBetween: 10,
+      //   },
+      //   1024: {
+      //     slidesPerView: 4,
+      //     spaceBetween: 5,
+      //   },
+      //   1280: {
+      //     slidesPerView: 5,
+      //   },
+      // }}
       navigation
       loop={true}
       onSwiper={(swiper) => console.log(swiper)}
@@ -59,11 +59,13 @@ const ImageSlider = () => {
 
       {data.map((item, index) => (
         
-        <div 
-        className='w-80 h-96'
-        key={item.id} >
+        // <div 
+        // className='w-80 bg-green-600 z-40 h-96'
+        // key={index} >
         
-            <SwiperSlide>
+            <SwiperSlide
+            key={item.id}
+            >
        <div className={`w-64 h-96 ${index % 2 !== 0 ? 'pt-4 md:pt-0' : 'pt-4'}`}>
 
           <Image
@@ -75,7 +77,7 @@ const ImageSlider = () => {
           <p className="mt-4 pt-3 w-full text-black italic">{item.text}</p>
 
             </SwiperSlide>
-        </div>
+        // </div>
       ))}
 
       </Swiper>
