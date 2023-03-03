@@ -43,8 +43,13 @@ const ImageSlider = () => {
           spaceBetween: 10,
         },
         768: {
+          slidesPerView: 2.5,
+          spaceBetween: 5,
+        },
+
+        800: {
           slidesPerView: 3,
-          spaceBetween: 10,
+          spaceBetween: 5,
         },
         1024: {
           slidesPerView: 4,
@@ -70,7 +75,7 @@ const ImageSlider = () => {
             key={item.id}
             className="w-full h-full flex flex-col items-center   mx-0 px-0justify-center"
             >
-       <div className={`w-64 h-96 ${index % 2 !== 0 ? 'pt-4 md:pt-0' : 'pt-4'}`}>
+       <div className={`w-48 h-68 md:w-64 md:h-96 ${index % 2 !== 0 ? 'pt-4 md:pt-0' : 'pt-4'}`}>
 
           <Image
           src={item.image} alt={item.text}
