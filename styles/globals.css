@@ -9,12 +9,17 @@
     padding: 7px 15px;
     background: #FFF;
     color: #111;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     line-height: 1;
     text-transform: uppercase;
     border-radius: 30px;
 
+  }
+
+  /* .mySwiper change the color of the arrows to black  */
+  .mySwiper .swiper-button-next, .mySwiper .swiper-button-prev {
+    color: #000;
   }
 }
 

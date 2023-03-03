@@ -2,11 +2,11 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer aria-label="Site Footer" className="bg-white">
+        <footer aria-label="Site Footer" className="bg-black">
   <div
     className="max-w-screen-xl px-4 py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8"
   >
-    <div className="sm:flex sm:items-center sm:justify-between">
+    {/* <div className="sm:flex sm:items-center sm:justify-between">
       <div className="text-teal-600">
         <svg
           className="h-8"
@@ -63,7 +63,7 @@ const Footer = () => {
             href="/"
             rel="noreferrer"
             target="_blank"
-            className="text-gray-700 transition hover:opacity-75"
+            className="text-slate-200 transition hover:opacity-75"
           >
             <span className="sr-only">Facebook</span>
 
@@ -87,7 +87,7 @@ const Footer = () => {
             href="/"
             rel="noreferrer"
             target="_blank"
-            className="text-gray-700 transition hover:opacity-75"
+            className="text-slate-200 transition hover:opacity-75"
           >
             <span className="sr-only">Instagram</span>
 
@@ -111,7 +111,7 @@ const Footer = () => {
             href="/"
             rel="noreferrer"
             target="_blank"
-            className="text-gray-700 transition hover:opacity-75"
+            className="text-slate-200 transition hover:opacity-75"
           >
             <span className="sr-only">Twitter</span>
 
@@ -133,7 +133,7 @@ const Footer = () => {
             href="/"
             rel="noreferrer"
             target="_blank"
-            className="text-gray-700 transition hover:opacity-75"
+            className="text-slate-200 transition hover:opacity-75"
           >
             <span className="sr-only">GitHub</span>
 
@@ -157,7 +157,7 @@ const Footer = () => {
             href="/"
             rel="noreferrer"
             target="_blank"
-            className="text-gray-700 transition hover:opacity-75"
+            className="text-slate-200 transition hover:opacity-75"
           >
             <span className="sr-only">Dribbble</span>
 
@@ -176,32 +176,32 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-    </div>
+    </div> */}
 
     <div
-      className="grid grid-cols-1 gap-8 pt-8 border-t border-gray-100 sm:grid-cols-2 lg:grid-cols-3 lg:pt-16"
+      className="grid grid-cols-1 gap-8 pt-8 border-b pb-6 border-gray-100 sm:grid-cols-3 lg:grid-cols-3 lg:pt-16"
     >
 
 
       <div>
-        <p className="font-medium text-gray-900">Company</p>
+        <p className="font-medium text-white">Company</p>
 
         <nav aria-label="Footer Navigation - Company" className="mt-6">
           <ul className="space-y-4 text-sm">
             <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75">
+              <a href="#" className="text-slate-200  transition hover:opacity-75">
                 About
               </a>
             </li>
 
             <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75">
+              <a href="#" className="text-slate-200 transition hover:opacity-75">
                 Meet the Team
               </a>
             </li>
 
             <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75">
+              <a href="#" className="text-slate-200 transition hover:opacity-75">
                 Accounts Review
               </a>
             </li>
@@ -210,18 +210,18 @@ const Footer = () => {
       </div>
 
       <div>
-        <p className="font-medium text-gray-900">Helpful Links</p>
+        <p className="font-medium text-white">Helpful Links</p>
 
         <nav aria-label="Footer Navigation - Company" className="mt-6">
           <ul className="space-y-4 text-sm">
             <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75">
+              <a href="#" className="text-slate-200 transition hover:opacity-75">
                 Contact
               </a>
             </li>
 
             <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75">
+              <a href="#" className="text-slate-200 transition hover:opacity-75">
                 FAQs
               </a>
             </li>
@@ -232,7 +232,7 @@ const Footer = () => {
                   href="/"
                 >
                   <span
-                    className="text-gray-700 transition group-hover:text-gray-700/75"
+                    className="text-slate-200 transition group-hover:text-slate-200/75"
                   >
                     Live Chat
                   </span>
@@ -252,30 +252,30 @@ const Footer = () => {
       </div>
 
       <div>
-        <p className="font-medium text-gray-900">Legal</p>
+        <p className="font-medium text-white">Legal</p>
 
         <nav aria-label="Footer Navigation - Legal" className="mt-6">
           <ul className="space-y-4 text-sm">
             <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75">
+              <a href="#" className="text-slate-200 transition hover:opacity-75">
                 Accessibility
               </a>
             </li>
 
             <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75">
+              <a href="#" className="text-slate-200 transition hover:opacity-75">
                 Returns Policy
               </a>
             </li>
 
             <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75">
+              <a href="#" className="text-slate-200 transition hover:opacity-75">
                 Refund Policy
               </a>
             </li>
 
             <li>
-              <a href="#" className="text-gray-700 transition hover:opacity-75">
+              <a href="#" className="text-slate-200 transition hover:opacity-75">
                 Hiring Statistics
               </a>
             </li>

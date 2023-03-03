@@ -9,7 +9,7 @@ import child from 'https://www.forafrika.org/wp-content/uploads/2022/08/Feed-a-c
 const FactSection = () => {
     return (
         <div className="flex flex-col md:flex-row py-20 items-center justify-center">
-            <div className="flex flex-col items-center w-full px-3 md:w-3/5 justify-center">
+            <div className="flex flex-col items-center w-full px-3 md:w-1/2 xl:w-3/5 justify-center">
                 <Image 
                  src={'https://www.forafrika.org/wp-content/uploads/2022/08/Feed-a-child.jpg'}
                  width={300}
@@ -20,7 +20,7 @@ const FactSection = () => {
 
                 </div>
 
-                <div className="flex flex-col text-left pt-10 md:w-2/5 px-6 md:px-8 justify-center">
+                <div className="flex flex-col text-left pt-10 md:w-1/2 xl:w-2/5 px-6 md:px-3 justify-center">
                     <h2 className="text-4xl font-normal font-serif pb-10 text-[#262633] text-center md:text-left helvetica-neue-regular">
                     Did you know that by giving $96, you will feed a child in Africa for an entire year? That’s only $8 per month!
                     </h2>

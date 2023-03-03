@@ -30,31 +30,34 @@ const ImageSlider = () => {
         <Swiper
       // install Swiper modules
       modules={[Navigation]}
-      // spaceBetween={30}
+      spaceBetween={7}
       // slidesPerView={4}
-      slidesPerView='auto'
-      // breakpoints={{
-      //   320: {
-      //     slidesPerView: 2,
-      //     spaceBetween: 10,
-      //   },
-      //   768: {
-      //     slidesPerView: 3,
-      //     spaceBetween: 10,
-      //   },
-      //   1024: {
-      //     slidesPerView: 4,
-      //     spaceBetween: 5,
-      //   },
-      //   1280: {
-      //     slidesPerView: 5,
-      //   },
-      // }}
+      // slidesPerView='auto'
+
+      centeredSlides={true}
+
+      className="mySwiper w-full"
+      breakpoints={{
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 5,
+        },
+        1280: {
+          slidesPerView: 5,
+        },
+      }}
       navigation
       loop={true}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
-      className='w-full'
     >
 
       {data.map((item, index) => (
@@ -65,6 +68,7 @@ const ImageSlider = () => {
         
             <SwiperSlide
             key={item.id}
+            className="w-full h-full flex flex-col items-center   mx-0 px-0justify-center"
             >
        <div className={`w-64 h-96 ${index % 2 !== 0 ? 'pt-4 md:pt-0' : 'pt-4'}`}>
 
