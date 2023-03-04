@@ -17,6 +17,10 @@
 
   }
 
+  .growImg {
+    @apply transition duration-500 ease-in-out w-full h-full rounded-xl max-w-xl hover:scale-110 transform hover:shadow-xl cursor-pointer;
+  }
+
   /* .mySwiper change the color of the arrows to black  */
   .mySwiper .swiper-button-next, .mySwiper .swiper-button-prev {
     color: #000;

@@ -9,14 +9,18 @@ import child from 'https://www.forafrika.org/wp-content/uploads/2022/08/Feed-a-c
 const FactSection = () => {
     return (
         <div className="flex flex-col md:flex-row py-20 items-center justify-center">
-            <div className="flex flex-col items-center w-full px-3 md:w-1/2 xl:w-3/5 justify-center">
+            <div className="flex flex-col items-center overflow-hidden  w-full px-3 md:w-1/2 xl:w-3/5 justify-center">
+             <div className="overflow-hidden rounded-xl shadow-xl max-w-xl w-full h-full">
+
                 <Image 
                  src={'https://www.forafrika.org/wp-content/uploads/2022/08/Feed-a-child.jpg'}
                  width={300}
                   height={300} 
-                  className="w-full h-auto rounded-xl object-cover"
-
+                //   className="w-full overflow-hidden ease-in-out h-auto rounded-xl object-cover transition-transform hover:duration-500 transform scale-100  hover:scale-110"
+className='transition duration-500 ease-in-out w-full h-full rounded-xl max-w-xl hover:scale-110'
                  alt="feed a child" />
+             </div>
+
 
                 </div>
 

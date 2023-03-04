@@ -49,8 +49,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+ {/* create a vertical line and when hoverd it's horizontal */}
+  
 
-<div className='w-full max-w-5xl lg:max-w-6xl px-2 lg:px-6 py-16 lg:py-36 relative mx-auto'>
+
+<div className='w-full max-w-5xl lg:max-w-6xl px-2 lg:px-6 py-16 lg:py-28 relative mx-auto'>
   <div className='hidden md:flex justify-end items-end'>
     <Image
     src='https://www.forafrika.org/wp-content/uploads/2022/08/Afrika-Thrive.jpg'

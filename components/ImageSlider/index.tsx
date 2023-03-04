@@ -18,7 +18,7 @@ const data = [
   { id: 4, image: 'https://www.forafrika.org/wp-content/uploads/2022/08/ForAfrika-Health.jpg', text: 'Health and Nutrition' },
   { id: 5, image: 'https://www.forafrika.org/wp-content/uploads/2022/08/Education-For-Afrika.jpg', text: 'Education' },
   { id: 6, image: 'https://www.forafrika.org/wp-content/uploads/2022/08/Economic-Empowerment.jpg', text: 'Economic-Empowerment' },
-    // { id: 7, image: 'https://www.forafrika.org/wp-content/uploads/2022/08/For-Afrika-Environment.jpg', text: 'Environment' },
+    { id: 7, image: 'https://www.forafrika.org/wp-content/uploads/2022/07/ForAfrika-Charity.jpg', text: 'Environment' },
     // { id: 8, image: 'https://www.forafrika.org/wp-content/uploads/2022/08/For-Afrika-Disaster-Management.jpg', text: 'Disaster Management' },
 //   { id: 7, image: 'image7.jpg', text: 'Text 7' },
 //   { id: 8, image: 'image8.jpg', text: 'Text 8' },
@@ -75,13 +75,13 @@ const ImageSlider = () => {
             key={item.id}
             className="w-full h-full flex flex-col items-center   mx-0 px-0justify-center"
             >
-       <div className={`w-48 h-68 md:w-64 md:h-96 ${index % 2 !== 0 ? 'pt-4 md:pt-0' : 'pt-4'}`}>
+       <div className={`w-48 h-68 overflow-hidden md:w-64 md:h-96 ${index % 2 !== 0 ? 'pt-4 md:pt-0' : 'pt-4'}`}>
 
           <Image
           src={item.image} alt={item.text}
           width={80}
             height={200}
-           className="w-full h-auto rounded-xl object-cover" />
+           className="w-full h-auto rounded-xl object-cover  growImg" />
           </div>
           <p className="mt-4 pt-3 w-full text-black italic">{item.text}</p>
 
