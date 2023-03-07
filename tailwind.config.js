@@ -10,7 +10,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+      extend: {
+        colors: {
+          primaryRed: "#9D1515",
+          base: "#E7E7E7",
+          nblack: "#262633",
+        },
+    },
   },
   plugins: [
     require("flowbite/plugin")

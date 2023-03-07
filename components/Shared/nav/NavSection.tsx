@@ -59,7 +59,7 @@ const NavSection: React.FC<NavSectionProps> = () => {
             {/* when the navbar item is clicked the page scrolls to the section */} 
             {/* when the navbar item is clicked the page scrolls to the section */}
 
-            <div className="flex flex-row justify-start items-center gap-4">
+            <div className="flex flex-row justify-start items-center gap-8 pb-6 pl-2">
                 {NavItems.map((navSection, idx) => {
                     return (
                         <div
@@ -70,12 +70,13 @@ const NavSection: React.FC<NavSectionProps> = () => {
                                 className="flex  justify-center items-center gap-2"
                                 onClick={() => handleNavSection(navSection)}
                             >
-                                <span className="zfont-bold text-black">
-                                    {idx + 1}
-                                </span>
+                               
                                 <li
-                                    className="flex flex-col text-black justify-center items-center gap-2"
+                                    className="flex hover:cursor-pointer hover:text-black/70 text-black justify-center items-center gap-2"
                                 >
+                                     <span className="p-0 m-0">
+                                    {idx + 1}.
+                                </span>
                                     {navSection.title}
                                 </li>
 

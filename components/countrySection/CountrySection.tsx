@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Faq from "../Faq/Faq";
+import { FaqSection } from "../FaqSection";
 
 
 const CountrySectionData = [
@@ -46,29 +47,31 @@ const CountrySectionData = [
 const CountrySection = () => {
     return (
         <div className="py-32 bg-[#f3efea] ">
-            <div className="container mx-auto px-4">
+            <div className="w-full mx-auto px-4">
                 <div
                 id="angola"
-                 className="flex flex-col items-start justify-start">
-                    <h1  className="text-5xl font-normal font-Regular font-serif mb-5  text-[#262633]">Our Impact</h1>
+                 className="flex flex-col items-start px-2 justify-start">
+                    <h1  className="text-5xl font-normal font-Regular font-serif mb-5  text-[#262633]">
+                        1. Angola</h1>
 
                     </div>
                     {/* discription */}
-                    <div className="flex mr-16 border-l border-black px-5 flex-col items-center justify-center">
-                        <p className="text-2xl font-normal font-serif text-[#262633]">
+                    <div className="flex border-l ml-9 px-5 py-2 border-black flex-col items-start justify-start">
+                        <p className="text-xl font-normal font-serif text-[#262633]">
                             We are working in 4 countries across Africa to improve the lives of the most vulnerable people.</p>
                             </div>
 
                             {/* Image Right FAQ Component on left Section  */}
-                            <div className="flex flex-col lg:flex-row  items-center justify-center">
+                            <div className="flex flex-col lg:flex-row items-end justify-between">
 
                                 {/* FAQ Component on left Section  */}
-                                <div className="flex flex-col lg:w-2/5 items-center justify-center">
-                                    <Faq />
+                                <div className="flex flex-col lg:w-[35%] w-full h-full mt-20 items-start md:items-center justify-start md:justify-center">
+                                    {/* <Faq /> */}
+                                    <FaqSection />
                                     </div>
 
                                     {/* Image Right FAQ Component on left Section  */}
-                                    <div className="flex flex-col lg:w-3/5 items-center justify-center">
+                                    <div className="flex flex-col w-full mx-1 h-[500px] px-2 lg:w-[65%]  items-center justify-center">
                                         {/* <ImageRight /> */}
 
                                         <Image
@@ -76,34 +79,52 @@ const CountrySection = () => {
                                             alt="Picture of the author"
                                             width={500}
                                             height={500}
+                                            className="object-cover rounded-xl w-full h-full"
                                         />
                                         </div>
 
                                         </div>
                                         {/* stats  */}
-                                        <div className="flex flex-col items-center justify-center">
-                                            <h1 className="text-3xl font-normal font-serif mb-5 text-[#262633]">
+                                        <div className="flex flex-col py-20  w-full">
+                                            <h1 className="text-3xl font-normal text-start font-serif mb-5 text-[#262633]">
                                                 angola at a glance in 2022
                                                 </h1>
 
                                                 {/* grid 2 large 4   */}
-                                                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                                  <div className="flex flex-col items-center border-t-2 border-black justify-center">
+                                                <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
+                                  <div className="flex flex-col items-start border-t-[1px] border-black justify-center">
 
 <h6 className="text-2xl font-normal font-serif text-[#262633]">1,000,000</h6>
 <p className="text-lg font-normal font-serif text-[#262633]">People in need</p>
 </div>
-<div className="flex flex-col items-center border-t-2 border-black justify-center">
+<div className="flex flex-col items-start border-t-[1px] border-black justify-center">
 
 <h6 className="text-2xl font-normal font-serif text-[#262633]">1,000,000</h6>
 <p className="text-lg font-normal font-serif text-[#262633]">People in need</p>
 </div>
-<div className="flex flex-col items-center border-t-2 border-black justify-center">
+<div className="flex flex-col items-start border-t-[1px] border-black justify-center">
+
+<h6 className="text-2xl font-normal font-serif text-[#262633]">1,000,000</h6>
+<p className="text-lg font-normal font-serif text-[#262633]">People in need</p>
+</div>
+<div className="flex flex-col items-start border-t-[1px] border-black justify-center">
 
 <h6 className="text-2xl font-normal font-serif text-[#262633]">1,000,000</h6>
 <p className="text-lg font-normal font-serif text-[#262633]">People in need</p>
 </div>
 </div>
+</div>
+
+{/* Full width Image Section */}
+<div className="flex flex-col w-full h-96 items-center justify-center">
+    <Image
+        src="https://www.forafrika.org/wp-content/uploads/2022/04/Water-For-Afrika.jpg"
+        alt="Picture of the author"
+        width={500}
+        height={500}
+        className="object-cover w-full h-full"
+        // layout="fill"
+    />
 </div>
 
 
