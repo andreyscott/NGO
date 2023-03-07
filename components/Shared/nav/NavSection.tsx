@@ -59,7 +59,7 @@ const NavSection: React.FC<NavSectionProps> = () => {
             {/* when the navbar item is clicked the page scrolls to the section */} 
             {/* when the navbar item is clicked the page scrolls to the section */}
 
-            <div className="flex flex-row justify-start items-center gap-8 pb-6 pl-2">
+            <div className="hidden md:flex flex-row justify-start items-center  gap-8 pb-6 pl-2">
                 {NavItems.map((navSection, idx) => {
                     return (
                         <div

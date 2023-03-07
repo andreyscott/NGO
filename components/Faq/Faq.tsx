@@ -9,7 +9,7 @@ const Faq = () => {
     return (
         <Accordion alwaysOpen={true}
         //   change arrow Icon to plus
-          arrowIcon={<PlusIcon className="w-5 h-5" />}
+          // arrowIcon={<PlusIcon className="w-5 h-5" />}
         >
         <Accordion.Panel
        
