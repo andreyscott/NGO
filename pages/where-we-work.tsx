@@ -8,7 +8,7 @@ const WhereWeWork = () => {
     return (
         <ClientLayout >
               <section className="w-screen bg-white  md:px-3 xl:px-6">
-            <div className="w-full max-w-5xl lg:max-w-6xl px-2 lg:px-6 lg:py-12 ">
+            <div className="w-full max-w-5xl lg:max-w-[1100px] mx-auto px-2 lg:px-6 lg:py-12 ">
                 <div className="flex justify-start items-center">
                     <Title title="Where We Work"
                     padding="py-20" 

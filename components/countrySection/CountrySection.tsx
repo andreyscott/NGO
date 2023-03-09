@@ -1,6 +1,7 @@
 import Image from "next/image";
 // import Faq from "../Faq/Faq";
 import { FaqSection } from "../FaqSection";
+import { motion } from "framer-motion";
 
 
 const CountrySectionData = [
@@ -186,7 +187,8 @@ const CountrySection = () => {
 
                                         </div>
                                         {/* stats  */}
-                                        <div className="flex flex-col py-20  w-full">
+                                        <div className="flex flex-col py-20 lg:py-32  w-full mx-auto">
+                                           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                                             <h1 className="text-3xl font-normal text-start font-serif mb-5 text-[#262633]">
                                                 {item.statsTitle}
                                                 </h1>
@@ -196,18 +198,27 @@ const CountrySection = () => {
                                   
                                                     {   
                                                         item.stats.map((item, index) => (
-                                  <div key={index} className="flex flex-col items-start border-t-[1px] border-black justify-center">
+                                  <div key={index} className="flex py-3 w-60  flex-col items-start border-t-[1px] border-black justify-center">
 
-<h6 className="text-2xl font-normal font-serif text-[#262633]">
+<h6 className="text-xl font-normal font-serif text-[#262633]">
     {item.number}
 </h6>
 <p className="text-lg font-normal font-serif text-[#262633]">
     {item.title}
 </p>
 </div>              ))      }
+</div>
+</div>
 
 {/* Full width Image Section */}
-<div className="flex w-screen h-[400px] items-center justify-center">
+<motion.div
+//    fadeInUp animation
+   initial={{ x: -100, opacity: 0 }}
+    animate={{ x: 0, opacity: 1 }}
+    transition={{ duration: 1.2 }}
+
+
+ className="flex w-full h-[400px] pt-16 items-center justify-center">
     <Image
         src={item.imageBottom}
         alt="Picture of the author"
@@ -216,12 +227,11 @@ const CountrySection = () => {
         className="object-cover rounded-xl w-full h-full"
         // layout="fill"
     />
-</div>
+</motion.div>
 
 
 
 
-                                        </div>
                                         </div>
                                         </div>
                                         ))

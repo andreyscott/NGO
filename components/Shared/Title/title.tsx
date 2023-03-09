@@ -22,12 +22,12 @@ paragraph,
     <h1
       className={`w-full text-start text-base  font-normal md:text-xl`}
     >
-      <span className=" inline-block pb-2  dark:text-black">
+      <span className=" inline-block pb-2 text-black">
         {title}
       </span>
     </h1>
     <p
-     className='text-start text-4xl font-normal mb-5 md:text-5xl mt-1'>
+     className='text-start text-4xl leading-loose tracking-wider font-normal mb-5 md:text-5xl mt-1'>
         {paragraph}
     </p>
 
