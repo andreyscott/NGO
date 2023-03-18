@@ -5,6 +5,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
+import localFont from '@next/font/local'
+
+const surt = localFont({
+  src: './fonts/Regular.otf',
+  variable: '--regular',
+})
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -14,5 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       offset: 50,
     });
   }, []);
-  return <Component {...pageProps} />
+  return <main className={surt.variable}>
+  <Component {...pageProps} />
+</main>
 }

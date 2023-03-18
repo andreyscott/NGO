@@ -215,7 +215,7 @@ const CountrySection = () => {
 //    fadeInUp animation
    initial={{ x: -100, opacity: 0 }}
     animate={{ x: 0, opacity: 1 }}
-    transition={{ duration: 1.2 }}
+    transition={{ duration: 1.2  }}
 
 
  className="flex w-full h-[400px] pt-16 items-center justify-center">
