@@ -12,6 +12,7 @@ import {
   ProjectDescription,
   VisitLink,
 } from './styledComponents'
+
 import Image from 'next/image'
 
 const ProjectTimelineCard = (props: { projectDetails: any }) => {
@@ -28,7 +29,9 @@ const ProjectTimelineCard = (props: { projectDetails: any }) => {
     <div className='w-full h-full my-2'>
       <Image
         className="w-full h-full"
-       src={imageUrl} alt="project" />
+       src={imageUrl} alt="project" 
+        width={400} height={300}
+       />
       <div 
       className='flex flex-col justify-between  items-start w-full md:flex-row md:items-center'
     >

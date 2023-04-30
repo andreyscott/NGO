@@ -29,24 +29,38 @@ const TimelineView = (props: { timelineItemsList: any }) => {
       <div    className='flex flex-col justify-center items-center max-w-[1110px] h-screen'>
         <div  className='flex flex-col justify-center items-center mb-8'>
           <h1 className='text-center text-[#171f46] font-roboto font-medium text-lg leading-[2.7] m-0 md:text-xl'>
-            MY JOURNEY OF <br />
-            <span
-              className='text-[#2b237c] font-roboto font-medium text-2xl m-0 md:text-3xl'
-            >CCBP 4.0</span>
+          OUR JOURNEY
           </h1>
         </div>
         <Chrono
-          theme={{
-            secondary: 'white',
-          }}
+ 
           items={timelineItemsList}
           mode="VERTICAL_ALTERNATING"
         >
+           <div className="chrono-icons">
+      <img
+        src="https://img.icons8.com/ios-filled/100/000000/twitter.png"
+        alt="twitter"
+      />
+      
+      <img
+        src="https://img.icons8.com/ios-filled/100/000000/about.png"
+        alt="twitter"
+      />
+      <img
+        src="https://img.icons8.com/ios-filled/100/000000/contacts.png"
+        alt="twitter"
+      />
+      <img
+        src="https://img.icons8.com/ios-filled/100/000000/info.png"
+        alt="twitter"
+      />
+    </div>
           {timelineItemsList.map((eachItem: any) => renderTimelineCard(eachItem))}
         </Chrono>
       </div>
     </div>
-  )
+  )  
 }
 
 export default TimelineView
