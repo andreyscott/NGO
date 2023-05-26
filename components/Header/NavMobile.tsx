@@ -48,7 +48,7 @@ interface NavMobileProps {
   return (
     <nav
       className={`${
-        navMobile ? 'min-h-screen bg-black' : 'min-h-0'
+        navMobile ? 'min-h-screen bg-slate-300' : 'min-h-0'
       } w-full fixed top-0 left-0 right-0 bg-primary-400 -bottom-12 -z-10 lg:hidden overflow-hidden transition-all h-0`}
     >
       {/* <div className='flex flex-col bottom-1/2 bg-violet-400 justify-between items-center w-full px-4 py-4'> */}

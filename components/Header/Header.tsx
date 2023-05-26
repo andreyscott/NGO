@@ -35,25 +35,27 @@ const Header = ( ) => {
   return (
     <header
       className={`${
-        isActive ? ' py-[16px]' : 'bg-white bg-cover bg-no-repeat py-[20px]'
+        isActive ? ' py-[16px]' : 'bg-white bg-cover bg-no-repeat py-[20px] px-5 lg:px-7'
       }
-       sticky bg-banner left-0 right-0 mx-auto flex justify-between items-center px-[7px] lg:px-[40px] z-30 transition-all duration-300`}
+       sticky bg-banner left-0 right-0 mx-auto flex justify-between items-center px-4 z-30 transition-all duration-300`}
     >
    
     {/* className='bg-white bg-cover bg-no-repeat py-4 md:py-5 mx-auto flex justify-between items-center px-[20px] lg:px-[60px] z-30 transition-all duration-300 */}
       {/* logo */}
+      <div className='w-full flex justify-between items-center'>
+
       <Link href='/'>
           <Image 
-        className='h-[50px]' 
-        // {navMobile ?
+        className='h-[50px] w-full object-contain' 
         src={navMobile ? 'https://www.forafrika.org/wp-content/uploads/2022/03/ForAfrika-Logo.png' : Africa }
         width={navMobile ? 100 : 300}
-        height={navMobile ? 80 : 200}
+        height={navMobile ? 100 : 200}
         
-        alt='TEST' />
+        alt='logo' />
 
         
       </Link>
+
 
       {/* nav - initially hidden - show in desktop mode */}
       <Nav />
@@ -79,6 +81,8 @@ const Header = ( ) => {
          
         )}
       </div>
+      </div>
+
 
       {/* nav mobile - hide on desktop */}
       <NavMobile navMobile={navMobile} />

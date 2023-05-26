@@ -82,7 +82,7 @@ let timelineElements = [
     title: "Finding our feet",
     location: "Dragontail, Ascana",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
+    'Peter Pretorius, a South African, was one of the first people to respond to the Mozambican government’s plea to the international community for urgent humanitarian relief during a famine that had placed nearly four million people at risk of starvation. He visited Pambarra Village near Vilankulo, Inhambane Province, to see how he could contribute in the emergency. Peter was meant to be on the ground for a day, but he was left there for 10 days with no food, water, or other supplies. He witnessed death, despair and deep poverty in that community. Up to 30 people died of starvation every day, leaving so many children orphaned.'     ,
     buttonText: "View Frontend Projects",
     date: "August 2016 - present",
     icon: "work",

@@ -166,13 +166,14 @@ const Stories = () => {
               dateClassName="text-[262633] text-sm font-semibold"
               iconStyle={isWorkIcon ? GoCalendarSS : GoCalendarS}
               icon={isWorkIcon ? <GoCalendar /> : <GoCalendar />}
-              className=''
+              className='bg-[#F9F9F9]'
             >
+              <div className='flex justify-between items-center py-1 flex-col h-[400px]'>
               <h3 className=" text-xl p-0 m-0 w-full ">
                 {element.title}
               </h3>
            
-              <p className='-mt-2 mb-2 pb-6 w-full  text-[#262633]' id="description">
+              <p className='-mt-2 mb-2 pb-6 w-full  text-[#262633]'>
                 {element.description}</p>
 
               {showButton && (
@@ -186,6 +187,7 @@ const Stories = () => {
                   {element.buttonText}
                 </a>
               )}
+</div>
         </VerticalTimelineElement>
           )
         })}
