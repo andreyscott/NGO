@@ -22,7 +22,7 @@ paragraph,
     <h1
       className={`w-full text-start text-base  font-normal md:text-xl`}
     >
-      <span className=" inline-block pb-2 text-black ">
+      <span className=" inline-block pb-2 text-tblack ">
         {title}
       </span>
     </h1>

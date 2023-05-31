@@ -72,7 +72,7 @@ const NavSection: React.FC<NavSectionProps> = () => {
                             >
                                
                                 <li
-                                    className="flex hover:cursor-pointer hover:text-black/70 text-black justify-center items-center gap-2"
+                                    className="flex hover:cursor-pointer hover:text-tblack/70 text-tblack justify-center items-center gap-2"
                                 >
                                      <span className="p-0 m-0">
                                     {idx + 1}.

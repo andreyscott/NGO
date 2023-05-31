@@ -37,7 +37,7 @@ const Header = ( ) => {
       className={`${
         isActive ? ' py-[16px]' : 'bg-white bg-cover bg-no-repeat py-[20px] px-5 lg:px-7'
       }
-       sticky bg-banner left-0 right-0 mx-auto flex justify-between items-center px-4 z-30 transition-all duration-300`}
+       sticky left-0 right-0 mx-auto flex justify-between items-center px-4 z-30 transition-all duration-300`}
     >
    
     {/* className='bg-white bg-cover bg-no-repeat py-4 md:py-5 mx-auto flex justify-between items-center px-[20px] lg:px-[60px] z-30 transition-all duration-300 */}
@@ -68,13 +68,13 @@ const Header = ( ) => {
         {navMobile ? (
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
           viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"
-          className='text-3xl w-10 h-10 text-white hover:text-[#a50000] duration-300 ease-in-out cursor-pointer' >
+          className='text-3xl w-10 h-10 text-white hover:text-sBlue duration-300 ease-in-out cursor-pointer' >
   <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
 </svg> 
 
         ) : (
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" 
-            className="w-6 h-6 text-black">
+            className="w-6 h-6 text-tblack">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
           </svg> 
           

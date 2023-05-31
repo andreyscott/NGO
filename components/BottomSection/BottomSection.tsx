@@ -9,8 +9,8 @@ const BottomSection = () => {
         <div className=" w-full  md:max-w-3xl pb-12 mb-2 text-center mx-auto">
 
           
-<h1 className="md:text-3xl text-2xl font-light pb-4 md:pb-6 text-center text-black">Our Work</h1>
-<p className="text-xl md:text-2xl font-normal text-center text-black font-serif"> We listen to the priorities of our people and together design programmes that give all African people the ability to thrive.</p>
+<h1 className="md:text-3xl text-2xl font-light pb-4 md:pb-6 text-center text-tblack">Our Work</h1>
+<p className="text-xl md:text-2xl font-normal text-center text-tblack font-serif"> We listen to the priorities of our people and together design programmes that give all African people the ability to thrive.</p>
 
 </div>
 

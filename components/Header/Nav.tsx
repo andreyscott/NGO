@@ -44,14 +44,14 @@ const Nav = () => {
             >
               <Link href={item.link} 
               // className='hover:text-primary-200 transition'
-              className={`text-black hover:text-[#a50000] transition duration-500 ease-out`}
+              className={`text-tblack hover:text-sBlue transition duration-500 ease-out`}
               >
                 {item.title}
               </Link>
 
               {hovered == item.title && item.additionalLinks && (
-                        <div className="absolute flex flex-col -ml-8 mt-5 items-center justify-center bg-white rounded-md ">
-                          <div className="flex flex-col items-center justify-center text-black truncate ">
+                        <div className="absolute flex flex-col -ml-8 mt-3 items-center justify-center bg-white rounded-md ">
+                          <div className="flex flex-col items-center justify-center text-tblack truncate ">
                             {item.additionalLinks.map((adLink) => {
                               return (
                                 <button

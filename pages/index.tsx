@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
       <Header />
 
-      <main className='bg-slate-200 w-screen'>
+      <main className='bg-bgwhite w-screen'>
       <div className="relative w-screen">
         <div className="bg-hero-section bg-no-repeat h-screen w-screen bg-center bg-cover">
           <video autoPlay loop muted className="absolute inset-0 object-cover w-screen h-screen xl:h-auto">

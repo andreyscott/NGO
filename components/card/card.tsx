@@ -1,7 +1,9 @@
 import React from 'react';
 
 import Red from '@/public/Pattern-background-red.svg'
-import Afr from '@/public/Pattern-background-red.svg'
+// import Afr from '@/public/Pattern-background-red.svg'
+import Afr from '@/public/IamForAfrikaDay.svg'
+
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 

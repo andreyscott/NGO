@@ -65,7 +65,7 @@ interface NavMobileProps {
               <a
               className={`
               ${item.link ? 'text-primary-200' : 'text-white'}
-              text-body-md group-hover:text-[#a50000] transition flex flex-col duration-700 ease-in-out items-center justify-center`
+              text-body-md group-hover:text-sBlue transition flex flex-col duration-700 ease-in-out items-center justify-center`
               }
                href={item.link}>
                 {item.title}
@@ -73,7 +73,7 @@ interface NavMobileProps {
 
 {hovered == item.title && item.additionalLinks && (
                         <div className=" flex flex-col mt-5 items-center justify-center bg-white rounded-md ">
-                          <div className="flex flex-col items-center justify-center text-black truncate ">
+                          <div className="flex flex-col items-center justify-center text-tblack truncate ">
                             {item.additionalLinks.map((adLink) => {
                               return (
                                 <button

@@ -13,9 +13,11 @@ module.exports = {
   theme: {
       extend: {
         colors: {
-          primaryRed: "#9D1515",
-          base: "#E7E7E7",
-          nblack: "#262633",
+          tblack: "#1d2020",
+          pBlue: '#29427b',
+          sBlue: '#00b7ec',
+          accenty: '#fcbb52',
+          bgwhite: '#FFFFFF',
         },
         fontFamily: {
           sans: ['var(--regular)'],
