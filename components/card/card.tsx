@@ -10,10 +10,13 @@ import Image from 'next/image';
 
 const CardY = () => {
     return (
-        <div className="h-full w-full">
-          {/* 430-500 */}
-          {/* 600-500 */}
-          {/* 737-w h-500  */}
+        <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        
+         className="h-full w-full">
+        
         <div className="relative overflow-hidden rounded-lg mx-auto shadow-lg w-[24rem] h-[550px] sm:w-[35rem] md:w-[37rem] xl:w-[40rem]  md:h-[32rem] xl:h-[26rem] cursor-pointer">
           <Image className="object-cover w-full h-full" 
           src={Afr}
@@ -51,7 +54,7 @@ const CardY = () => {
           </div>
         </div>
       
-        </div>
+        </motion.div>
     );
 }
 

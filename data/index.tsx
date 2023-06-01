@@ -40,15 +40,6 @@ export const header = {
         },
       ]
     },
-   {
-      title: 'Where we work',
-      link: '/where-we-work',
-    },
-    {
-      title: 'Stories',
-      link:"/stories",
-    },
-
     {
       title: 'About us',
       link: '/about',
@@ -72,6 +63,14 @@ export const header = {
         
       ]
     },  
+   {
+      title: 'Where we work',
+      link: '/where-we-work',
+    },
+    {
+      title: 'Stories',
+      link:"/stories",
+    },
 
 ];
 

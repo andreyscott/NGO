@@ -6,7 +6,7 @@ const BottomSection = () => {
     return (
         <div className="bg-slate-200">
         <div className="py-20 ">
-        <div className=" w-full  md:max-w-3xl pb-12 mb-2 text-center mx-auto">
+        <div className=" w-full  md:max-w-4xl pb-12 mb-2 text-center mx-auto">
 
           
 <h1 className="md:text-3xl text-2xl font-light pb-4 md:pb-6 text-center text-tblack">Our Work</h1>
@@ -14,10 +14,10 @@ const BottomSection = () => {
 
 </div>
 
-            <div className="flex flex-col md:flex-row h-fit w-screen px-1 justify-center items-center">
+            <div className="flex flex-col md:flex-row h-fit w-screen max-w-7xl px-1 justify-center items-center">
               {/* create a background Image  with a button on the top right and a text in the center  */}
                 <div className="w-full md:w-1/2 px-1 h-[32rem]">
-                <div className="relative w-full mx-auto  mb-32 md:mb-10 px-2">
+                <div className="relative w-full mx-auto  mb-32 md:mb-10">
                     <Image
                     src='https://www.forafrika.org/wp-content/uploads/2023/02/loveforafrika-800x800_c.jpg'
 
@@ -35,10 +35,6 @@ const BottomSection = () => {
 
                             </div>
                             </div>
-                            {/* create a grid of  4 images with a button on the top right with 2 rows and 2 columns */}
-
-
-                            {/* create a grid of  4 images with a button on the top right with 2 rows and 2 columns */}
 
                             <div className=" w-full md:w-1/2 px-2 h-[32rem]">
                                 <div className="grid grid-cols-2 gap-4">

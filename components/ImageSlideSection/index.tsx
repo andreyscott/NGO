@@ -3,8 +3,20 @@ import ImageSlider from '../ImageSlider';
 
 const ImageSwipper = () => {
     return (
-        <div className="px-2 py-20">
+        <div className="px-2 py-20 relative">
             {/* Title of the Section  */}
+            <img 
+            //  style={{
+            //     // backgroundImage: "url(/img/shapes.svg)",
+            //     backgroundRepeat: "no-repeat",
+            //     backgroundSize: "cover",
+            //  }}
+             src='/img/shapes.svg'
+             alt='blob'
+             className='absolute w-full left-24 bottom-24 animate-blob2'
+             />
+
+             {/* </div> */}
             <div className=" w-full max-w-2xl md:max-w-3xl pb-12 md:mb-2 text-center mx-auto">
 
           

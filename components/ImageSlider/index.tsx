@@ -11,6 +11,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+import { motion } from 'framer-motion';
 const data = [
   { id: 1, image: 'https://www.forafrika.org/wp-content/uploads/2022/08/Emergency-Response-ForAfrika.jpg', 
   text: 'Emergency response',
@@ -36,7 +37,13 @@ const data = [
 
 const ImageSlider = () => {
   return (
-    <div className="flex w-full mx-auto lg:mx-auto lg:max-w-7xl flex-wrap">
+
+    // fade in from below motion 
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+     className="flex w-full mx-auto lg:mx-auto lg:max-w-7xl flex-wrap">
         <Swiper
       // install Swiper modules
       modules={[Navigation]}
@@ -105,7 +112,7 @@ const ImageSlider = () => {
       ))}
 
       </Swiper>
-    </div>
+    </motion.div>
   );
 };
 

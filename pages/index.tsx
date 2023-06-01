@@ -24,12 +24,12 @@ export default function Home() {
       <main className='bg-bgwhite w-screen'>
       <div className="relative w-screen">
         <div className="bg-hero-section bg-no-repeat h-screen w-screen bg-center bg-cover">
-          <video autoPlay loop muted className="absolute inset-0 object-cover w-screen h-screen xl:h-auto">
+          {/* <video autoPlay loop muted className="absolute inset-0 object-cover w-screen h-screen xl:h-auto">
             <source
               src="Home/robovice-banner.mp4"
               type="video/mp4"
             />
-          </video>
+          </video> */}
           <div className="absolute inset-0 w-full max-w-3xl md:max-w-4xl">
             {/* <Navbar /> */}
             <div className="sm:text-5xl leading-9 h-96 w-full sm:w-[40rem] xl:w-[44rem] tracking-wider  text-4xl font-bold my-52 mx-3 sm:mx-7 md:mx-16 text-left text-white">
@@ -53,7 +53,17 @@ export default function Home() {
   
 
 
-<div className='w-full max-w-5xl lg:max-w-6xl px-2 lg:px-6 py-16 lg:py-28 relative mx-auto'>
+<div
+ id="message"
+ style={{
+   backgroundImage: "url(/img/nature8.svg)",
+   backgroundRepeat: "no-repeat",
+   backgroundSize: "cover",
+   width: "100%",
+   position: "relative",
+   top: "10%",
+ }}
+ className='w-full max-w-6xl lg:max-w-7xl px-2 lg:px-6 py-16 lg:py-28 relative mx-auto'>
   <div className='hidden md:flex justify-end items-end'>
     <Image
     src='https://www.forafrika.org/wp-content/uploads/2022/08/Afrika-Thrive.jpg'
