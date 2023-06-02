@@ -110,8 +110,8 @@ const timelineItemsList = [
 ];
 
 const Stories = () => {
-  let GoCalendarSS = { background: "#E5E5E5" }
-  let GoCalendarS = { background: "#E5e5e5" }
+  let GoCalendarSS = { background: "#fcbb52" }
+  let GoCalendarS = { background: "#00b7ec" }
 
     return (
         <ClientLayout >

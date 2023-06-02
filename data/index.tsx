@@ -81,7 +81,7 @@ let timelineElements = [
     location: "Dragontail, Ascana",
     description:
     'Peter Pretorius, a South African, was one of the first people to respond to the Mozambican government’s plea to the international community for urgent humanitarian relief during a famine that had placed nearly four million people at risk of starvation. He visited Pambarra Village near Vilankulo, Inhambane Province, to see how he could contribute in the emergency. Peter was meant to be on the ground for a day, but he was left there for 10 days with no food, water, or other supplies. He witnessed death, despair and deep poverty in that community. Up to 30 people died of starvation every day, leaving so many children orphaned.'     ,
-    buttonText: "View Frontend Projects",
+    buttonText: "Learn More",
     date: "August 2016 - present",
     icon: "work",
   },
@@ -90,8 +90,8 @@ let timelineElements = [
     title: "Learning the ropes",
     location: "Skystead, Craonia",
     description:
-      "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
-    buttonText: "View Backend Projects",
+    "Creating better living conditions for children in need - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+    buttonText: "learn more",
     date: "June 2013 - August 2016",
     icon: "work",
   },
@@ -105,28 +105,9 @@ let timelineElements = [
     date: "September 2011 - June 2013",
     icon: "work",
   },
+ 
   {
     id: 4,
-    title: "Oak Ridge College",
-    location: "South Warren, Geshington",
-    description:
-      "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-    buttonText: "Course Certificate",
-    date: "September 2011",
-    icon: "school",
-  },
-  {
-    id: 5,
-    title: "Hawking College",
-    location: "Skystead, Craonia",
-    description:
-      "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-    buttonText: "College Projects",
-    date: "2007 - 2011",
-    icon: "school",
-  },
-  {
-    id: 6,
     title: "Marble Hills Grammar School",
     location: "Dragontail, Ascana",
     description:

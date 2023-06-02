@@ -44,7 +44,7 @@ const Nav = () => {
             >
               <Link href={item.link} 
               // className='hover:text-primary-200 transition'
-              className={`text-tblack hover:text-sBlue transition duration-500 ease-out`}
+              className={`text-tblack hover:text-accenty/100 transition duration-500 ease-out`}
               >
                 {item.title}
               </Link>
