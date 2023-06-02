@@ -12,6 +12,7 @@ export default function CompanyLogo() {
             <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
               src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
+              
               alt="Transistor"
               width={158}
               height={48}

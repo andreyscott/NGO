@@ -69,11 +69,12 @@ const ImageSlider = () => {
           spaceBetween: 5,
         },
         1024: {
-          slidesPerView: 3,
-          spaceBetween: 5,
+          slidesPerView: 3.1,
+          spaceBetween: 10,
         },
         1280: {
-          slidesPerView: 4.2,
+          slidesPerView: 4,
+           spaceBetween: 10,
         },
       }}
       // navigation
