@@ -56,12 +56,12 @@ const ImageSlider = () => {
       className="mySwiper w-full"
       breakpoints={{
         320: {
-          slidesPerView: 1.1,
-          spaceBetween: 8,
+          slidesPerView: 1.3,
+          // spaceBetween: 8,
         },
         768: {
-          slidesPerView: 1.4,
-          spaceBetween: 5,
+          slidesPerView: 1.6,
+          // spaceBetween: 5,
         },
 
         800: {
@@ -91,9 +91,9 @@ const ImageSlider = () => {
         
             <SwiperSlide
             key={item.id}
-            className="w-full h-full flex flex-col items-center   mx-0 px-0justify-center"
+            className="w-full h-full flex flex-col items-center   mx-0 px-0 justify-center"
             >
-       <div className={` w-64 sm:w-72 h-96 overflow-hidden md:w-80 md:h-[500px] ${ index % 2 === 0 ? "mt-9" : ""}`}>
+       <div className={`w-72 h-96 overflow-hidden md:w-80 md:h-[500px] ${ index % 2 === 0 ? "mt-9" : ""}`}>
 
           <Image
           src={item.image} alt={item.text}
@@ -101,7 +101,7 @@ const ImageSlider = () => {
             height={200}
            className="w-full h-auto rounded-xl px-2 object-cover  growImg" />
           </div>
-          <div className="flex px-3 flex-col justify-center text-center items-center">
+          <div className="flex px-3 flex-col pt-3 justify-center text-center items-center">
 
           <h1 className=" text-tblack font-bold text-xl">{item.text}</h1>
           <p className="pt-3 w-full text-tblack text-base italic">{item.details}</p>

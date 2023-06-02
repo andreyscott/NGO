@@ -10,6 +10,14 @@ export const header = {
 
   export const nav = [
     {
+      title: 'Where we work',
+      link: '/where-we-work',
+    },
+    {
+      title: 'Stories',
+      link:"/stories",
+    },
+    {
       title: 'Our work',
       link: '/our-work',
       additionalLinks: [
@@ -63,15 +71,6 @@ export const header = {
         
       ]
     },  
-   {
-      title: 'Where we work',
-      link: '/where-we-work',
-    },
-    {
-      title: 'Stories',
-      link:"/stories",
-    },
-
 ];
 
 
