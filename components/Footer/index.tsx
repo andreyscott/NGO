@@ -196,7 +196,7 @@ const Footer = () => {
             <li>
               <a
                 className="flex items-center justify-center gap-1.5 ltr:sm:justify-center rtl:sm:justify-center"
-                href="/"
+                href="mailto:testing@gmail.com"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +220,7 @@ const Footer = () => {
             <li>
               <a
                 className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                href="/"
+                href="tel:+1-202-555-0176"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
