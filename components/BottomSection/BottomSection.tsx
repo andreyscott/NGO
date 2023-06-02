@@ -4,7 +4,17 @@ import Image from "next/image";
 
 const BottomSection = () => {
     return (
-        <div className="bg-slate-200">
+        <div
+        id="card"
+        style={{
+          backgroundImage: "url(/img/nature6.svg)",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          width: "100%",
+          position: "relative",
+          top: "10%",
+        }}
+        className='w-full max-w-6xl lg:max-w-7xl px-2 lg:px-6 py-16 lg:py-28 relative mx-auto'>
         <div className="py-20 ">
         <div className=" w-full  md:max-w-4xl pb-12 mb-2 text-center mx-auto">
 

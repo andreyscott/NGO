@@ -8,9 +8,13 @@ import {RiDoubleQuotesR} from 'react-icons/ri'
 
 const CardB = () => {
     return (
-      <div className="h-full w-full flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="h-full w-full flex items-center justify-center bg-transparent py-12 px-4 sm:px-6 lg:px-8">
         <div className=" max-w-xl sm:max-w-3xl md:max-w-7xl lg:max-w-7xl px-3 py-32">
-        <div className="relative overflow-hidden rounded-lg mx-auto shadow-lg max-w-8xl w-[25rem] md:w-[45rem] lg:w-[50rem] xl:w-[60rem] h-[30rem] md:h-[26rem] xl:h-[27rem] cursor-pointer">
+        <motion.div
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:1}}
+         className="relative overflow-hidden rounded-lg mx-auto shadow-lg max-w-8xl w-[25rem] md:w-[45rem] lg:w-[50rem] xl:w-[60rem] h-[30rem] md:h-[26rem] xl:h-[27rem] cursor-pointer">
           <Image className="object-cover w-full h-full" 
           src={yellow}
             width={200}
@@ -53,7 +57,7 @@ const CardB = () => {
                 <a href="#" className="text-white text-base md:text-lg font-semibold pb-2">Isak Pretorius:  CEO</a>
 </div>                
           </div>
-        </div>
+        </motion.div>
       
         </div>
         </div>

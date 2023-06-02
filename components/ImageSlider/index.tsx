@@ -56,30 +56,30 @@ const ImageSlider = () => {
       className="mySwiper w-full"
       breakpoints={{
         320: {
-          slidesPerView: 1.5,
+          slidesPerView: 1.1,
           spaceBetween: 8,
         },
         768: {
-          slidesPerView: 1.5,
+          slidesPerView: 1.4,
           spaceBetween: 5,
         },
 
         800: {
-          slidesPerView: 2.5,
+          slidesPerView: 2.3,
           spaceBetween: 5,
         },
         1024: {
-          slidesPerView: 3.5,
+          slidesPerView: 3,
           spaceBetween: 5,
         },
         1280: {
-          slidesPerView: 4.5,
+          slidesPerView: 4.2,
         },
       }}
       // navigation
       loop={true}
       onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+      // onSlideChange={() => console.log('slide change')}
     >
 
       {data.map((item, index) => (
@@ -92,7 +92,7 @@ const ImageSlider = () => {
             key={item.id}
             className="w-full h-full flex flex-col items-center   mx-0 px-0justify-center"
             >
-       <div className={`w-72 h-96 overflow-hidden md:w-80 md:h-[500px] ${ index % 2 === 0 ? "mt-9" : ""}`}>
+       <div className={` w-64 sm:w-72 h-96 overflow-hidden md:w-80 md:h-[500px] ${ index % 2 === 0 ? "mt-9" : ""}`}>
 
           <Image
           src={item.image} alt={item.text}

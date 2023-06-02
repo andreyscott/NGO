@@ -1,5 +1,6 @@
 import React from 'react';
 import ImageSlider from '../ImageSlider';
+import Image from 'next/image'
 
 const ImageSwipper = () => {
     return (
