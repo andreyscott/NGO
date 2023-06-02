@@ -48,7 +48,7 @@ interface NavMobileProps {
   return (
     <nav
       className={`${
-        navMobile ? 'min-h-screen bg-slate-300' : 'min-h-0'
+        navMobile ? 'min-h-screen bg-black' : 'min-h-0'
       } w-full fixed top-0 left-0 right-0 bg-primary-400 -bottom-12 -z-10 lg:hidden overflow-hidden transition-all h-0`}
     >
       {/* <div className='flex flex-col bottom-1/2 bg-violet-400 justify-between items-center w-full px-4 py-4'> */}
@@ -56,7 +56,7 @@ interface NavMobileProps {
         {nav.map((item, idx) => {
           return (
             <li
-            className='flex  flex-col w-44 group justify-center duration-700 ease-in-out text-center items-center'
+            className='flex  flex-col w-44 group justify-center duration-1000 ease-in-out text-center items-center'
              key={idx}
               onClick={() => setActive(!active)}
               onMouseEnter={() => setHovered(item.title)}
@@ -64,8 +64,8 @@ interface NavMobileProps {
              >
               <a
               className={`
-              ${item.link ? 'text-primary-200' : 'text-white'}
-              text-body-md group-hover:text-sBlue transition flex flex-col duration-700 ease-in-out items-center justify-center`
+              ${item.link ? 'text-accenty/100' : 'text-white'}
+              text-body-md group-hover:text-accenty transition flex flex-col duration-700 ease-in-out items-center justify-center`
               }
                href={item.link}>
                 {item.title}
@@ -93,13 +93,17 @@ interface NavMobileProps {
             </li>
           );
         })}
-         <ul className="flex justify-start gap-6 pt-16 mt-8 sm:mt-0 sm:justify-end">
+         <ul
+         data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          className="flex justify-start gap-6 pt-16 mt-8 sm:mt-0 sm:justify-end">
         <li>
           <a
             href="/"
             rel="noreferrer"
             target="_blank"
-            className="text-white hover:text-gray-700 transition hover:opacity-75"
+            className="text-accenty/70 hover:text-gray-700 transition hover:opacity-75"
           >
             <span className="sr-only">Facebook</span>
 
@@ -123,7 +127,7 @@ interface NavMobileProps {
             href="/"
             rel="noreferrer"
             target="_blank"
-            className="text-white hover:text-gray-700 transition hover:opacity-75"
+            className="text-accenty/70 hover:text-gray-700 transition hover:opacity-75"
           >
             <span className="sr-only">Instagram</span>
 
@@ -147,7 +151,7 @@ interface NavMobileProps {
             href="/"
             rel="noreferrer"
             target="_blank"
-            className="text-white hover:text-gray-700 transition hover:opacity-75"
+            className="text-accenty/70 hover:text-gray-700 transition hover:opacity-75"
           >
             <span className="sr-only">Twitter</span>
 
@@ -169,7 +173,7 @@ interface NavMobileProps {
             href="/"
             rel="noreferrer"
             target="_blank"
-            className="text-white hover:text-gray-700 transition hover:opacity-75"
+            className="text-accenty/70 hover:text-gray-700 transition hover:opacity-75"
           >
             <span className="sr-only">Dribbble</span>
 
